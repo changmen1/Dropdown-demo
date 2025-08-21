@@ -79,7 +79,7 @@ export const layout: RunTimeLayoutConfig = ({
     },
     // TODO layout 的内容区 style 类型	CSSProperties
     contentStyle: {
-      padding: 0
+      padding: 0,
     },
     // TODO 自定义顶部title
     headerTitleRender: (logo: React.ReactNode, title) => <div>
@@ -97,26 +97,6 @@ export const layout: RunTimeLayoutConfig = ({
         history.push(loginPath);
       }
     },
-    bgLayoutImgList: [
-      {
-        src: 'https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/D2LWSqNny4sAAAAAAAAAAAAAFl94AQBr',
-        left: 85,
-        bottom: 100,
-        height: '303px',
-      },
-      {
-        src: 'https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/C2TWRpJpiC0AAAAAAAAAAAAAFl94AQBr',
-        bottom: -68,
-        right: -45,
-        height: '303px',
-      },
-      {
-        src: 'https://mdn.alipayobjects.com/yuyan_qk0oxh/afts/img/F6vSTbj8KpYAAAAAAAAAAAAAFl94AQBr',
-        bottom: 0,
-        left: 0,
-        width: '331px',
-      },
-    ],
     // 自定义 403 页面
     // unAccessible: <div>unAccessible</div>,
     // 增加一个 loading 的状态
@@ -158,6 +138,5 @@ export const layout: RunTimeLayoutConfig = ({
  * @doc https://umijs.org/docs/max/request#配置
  */
 export const request: RequestConfig = {
-  baseURL: 'https://proapi.azurewebsites.net',
   ...errorConfig,
 };

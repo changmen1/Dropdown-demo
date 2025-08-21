@@ -95,20 +95,9 @@ export default function SwitchTabs(props: SwitchTabsProps): JSX.Element {
 
   const setTab = useMemoizedFn((tab: React.ReactNode, key: string, index: number) => (
     <span onContextMenu={(event) => event.preventDefault()}>
-      <ConfigProvider
-        theme={{
-          components: {
-            Dropdown: {
-              colorBgElevated: "#3171f4",
-              paddingBlock: 0
-            },
-          },
-        }}
-      >
-      <Dropdown  dropdownRender={() => setMenu(key, index)} trigger={['contextMenu']}>
+      <Dropdown dropdownRender={() => setMenu(key, index)} trigger={['contextMenu']}>
         <span className={styles.tabTitle}>{tab}</span>
       </Dropdown>
-      </ConfigProvider>
     </span>
   ));
 

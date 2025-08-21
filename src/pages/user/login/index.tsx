@@ -133,6 +133,7 @@ const Login: React.FC = () => {
     try {
       // 登录
       const msg = await login({ ...values, type });
+      let status = 'ok'
       if (msg.status === 'ok') {
         const defaultLoginSuccessMessage = intl.formatMessage({
           id: 'pages.login.success',

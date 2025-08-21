@@ -79,7 +79,7 @@ const Settings: ProLayoutProps & {
       colorTextRightActionsItem: '#fff',
       // 菜单选中后背景色
       colorTextMenuSelected: '#000',
-      colorTextMenuActive: "#fff"
+      colorTextMenuActive: "#fff",
       // heightLayoutHeader: 60
     },
     // TODO 内容区
